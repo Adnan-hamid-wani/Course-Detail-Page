@@ -1,124 +1,164 @@
 .header {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 1rem 1rem;
-  background: linear-gradient(233.91deg, #40916c 42.16%, #2d6a4f 65.15%);
-}
-
-.header__left {
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  display: flex;
-  flex-direction: column;
-  height: 100px;
-  width: 100px;
-  z-index: 1;
-}
-
-.logo-subtext {
-  position: absolute;
-  margin-top: 75px;
-  font-size: 0.8rem;
-  color: #f5deb3;
-  font-size: 8px;
-  margin-left: 20px;
-}
-
-.categories {
-  color: #ffffff;
-  align-items: center;
-  margin-left: 2rem;
-  margin-right: 1.5rem;
-  font-size: 10px;
-  display: flex;
-  flex-direction: column;
-  margin-top: 8px;
-  font-weight: 300;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
-
-.categories img {
-  height: 24px; /* Adjust as needed */
-  margin-right: 16px;
-  margin-left: 16px;
-  margin-bottom: 4px;
-}
-
-.header__center input {
-  width: 400px; /* Adjust as needed */
-  padding: 1rem;
-  border-radius: 16px;
-  border: none;
-  padding-left: 50px;
-  color: lightgrey;
-}
-
-.search__circle {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  gap: 0px;
-  opacity: 0px;
-  margin-top: 13px;
-  margin-left: 14px;
-  align-items: center;
-}
-
-.header__right {
-  display: flex;
-  align-items: center;
-  color: white;
-}
-
-.app-btn {
-  background-color: transparent;
-  border: 1px solid white;
-  color: white;
-  border-radius: 30px;
-  cursor: pointer;
-  margin-right: 50px;
-  font-size: 10px;
-  display: flex;
-  width: 7rem;
-  height: 2rem;
-  align-items: center;
-
-.app__img {
-    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    padding-right: 5rem;
+    width: 100%; /* Ensure the header takes up full screen width */
+    background: linear-gradient(233.91deg, #40916c 42.16%, #2d6a4f 65.15%);
+    box-sizing: border-box; /* Include padding in element’s total width */
+    
+  }
+  
+  /* Left section: logo and categories */
+  .header__left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 100px;
+    margin-top: -20px;
+  }
+  
+  .logo-subtext {
+    font-size: 0.8rem;
+    color: #f5deb3;
+    z-index: 1;
+    position: fixed;
+    margin-top: 6%;
+  }
+  
+  /* Categories styling */
+  .categories {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 300;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+  }
+  
+  .cat__img {
+    height: 20px;
+    width: 20px;
+    margin-bottom: 4px;
+    cursor: pointer;
+  }
+  
+  /* Center section: search bar */
+  .header__center {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .header__center input {
+    width: 100%;
+    max-width: 500px; /* Limit max width */
+    padding: 1rem;
+    border-radius: 16px;
+    border: none;
+    padding-left: 50px; /* Space for search icon */
+    box-sizing: border-box;
+    margin-right: 0.5rem; /* Add consistent spacing to the right */
+  }
+  
+  .search__circle {
+    position: relative;
+    left: 38px; /* Adjusted for better positioning inside the input */
+    top: 13px;
     width: 20px;
     height: 20px;
+    cursor: text;
+    color:grey;
   }
-}
+  
+  /* Right section: buttons */
+  .header__right {
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 0.5rem; /* Adds 0.5rem space between each button */
+  }
+  
+  .app-btn,
+  .login-btn,
+  .lang-btn {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 16px;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .app-btn {
+    height: 1.8rem;
+    margin-left: 1rem;
+  }
+  .login-btn {
+    padding: 1rem 2rem;
+    text-align: center;
+    font-weight: bold;
+    border: solid 2px;
+  }
+  
+  .lang-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+  }
+  
+  .app__img {
+    margin-right: 8px; /* Spacing for the icon in the button */
+    width: 20px;
+    height: 20px;
 
+  }
+  
+  /* Hover effects for buttons */
+  .app-btn:hover,
+  .login-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .header {
+      flex-direction: column; /* Stack sections on smaller screens */
+      padding: 1rem;
+    }
+    .header__left {
+      flex-direction: column;
+    }
+  
+    .header__center {
+      width: 100%;
+      margin: 1rem 0;
 
-.login-btn {
-
-  background-color: transparent;
-  border: 1px solid white;
-  color: white;
-  border-radius: 16px;
-  cursor: pointer;
-  padding: 1rem;
-  width: 10rem;
-  position:relative ;
-  margin-left: 40px;
-}
-.lang-btn{
-  display: flex;
-  align-items: center;
-  background: none;
-  border: none;
-  color: white;
-  position:absolute ;
-  margin-left: 125px;
-font-size: 20px ;
-}
-
-
-.app-btn:hover,
-.login-btn:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
+    }
+  
+    .header__right {
+      flex-direction: column;
+      gap: 0; /* No gap when stacked */
+    }
+  
+    .app-btn,
+    .login-btn,
+    .lang-btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
