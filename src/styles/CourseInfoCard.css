@@ -33,6 +33,7 @@
   padding: 5rem 5.5rem;
   position: relative;
   margin-top: 5.5rem ;
+  flex-direction: column;
 }
 
 /* Flexbox layout for button and rating */
@@ -45,18 +46,23 @@
 
 .course-btn {
   color: #2D6A4F;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 10px;
+  
 }
 
 .rating-section {
   font-size: 1.2rem;
   white-space: nowrap; /* Ensures the rating doesn't wrap to the next line */
+  color: white;
 }
 
 .course-details h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
+  color: white;
 }
 
 .price-section {
@@ -81,6 +87,8 @@
   display: flex;
   gap: 0.5rem;
   align-items: center;
+  color: white;
+
 }
 
 /* Responsive adjustments for smaller screens */
