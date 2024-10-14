@@ -1,0 +1,261 @@
+.about-section-left {
+  padding: 3rem 4rem;
+  display: flex;
+  justify-content: space-between; /* Distributes space between left and right sections */
+}
+
+.about-btn {
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  margin-left: 2rem;
+  font-size: large;
+  background: rgb(250, 247, 242);
+
+
+
+}
+
+.mentor-section {
+  flex: 1; /* Allows this section to grow */
+  max-width: 50%; /* Prevents this section from taking too much space */
+  padding-top: 1.5rem;
+}
+
+.mentor-section h3 {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.mentor-image {
+  height: 80px;
+  width: 80px;
+  margin-left: -10px;
+  border-radius: 50%;
+  margin-top: 0.7rem;
+}
+
+.mentor-info {
+  display: flex;
+  align-items: center;
+}
+
+.mentor-text {
+  margin-left: 1rem;
+  font-size: 12px;
+}
+
+.about-courses p {
+  font-size: 10px;
+  width: 90%;
+}
+
+.tools-img {
+  width: 70px;
+  height: 60px;
+  margin-left: -20px;
+  margin-top: 10px;
+}
+
+.tools {
+  display: flex;
+  align-items: center;
+}
+
+.tools p {
+  text-align: center;
+  font-size: 18px;
+}
+
+
+
+.course-summary-right {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column; /* Ensures contents are stacked */
+  background: #ffffff;
+  height: 380px; /* Adjust as needed */
+  width: 420px; /* Set the width */
+  border-radius: 30px;
+  padding-top: 1.5rem;
+
+
+}
+
+.video-container {
+  position: relative; /* Position relative to position the overlay */
+  width: 420px;
+  height: 180px; /* Match your video height */
+  border-radius: 26px;
+  cursor: pointer;
+  background-color:lightgray;
+}
+
+.course-video {
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  border-radius: 20px; /* Match border radius */
+  object-fit: cover; /* Ensure the video covers the area */
+}
+
+.video-overlay {
+  position: absolute; /* Position overlay over video */
+  top: 75%; 
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for element size */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center items */
+}
+
+.overlay-text {
+  margin-top: 5px; /* Space between button and text */
+  color: white; /* Text color */
+  font-size: 18px; /* Adjust as needed */
+}
+
+.tag {
+  display: inline-block; /* Makes it behave like a button */
+  background: #335EF714;
+  color: green; /* Text color */
+  border-radius: 6px; /* Rounded corners */
+  font-size: 6px; /* Font size */
+  width: 40px;
+  margin-top: 0.5rem;
+  height: 0.7rem;
+  width: 3rem;
+  text-align: center;
+  padding-top: 2px;
+}
+
+
+
+.about-course-details {
+  margin-top: auto;
+  padding: 0.5rem;
+  color:rgba(117, 117, 117, 1);
+  font-size: 10px;
+  
+}
+.about-course-details h4{
+  color: black;
+  font-size: 12px;
+}
+
+ul{
+  list-style-type: none; /* Removes the bullet points */
+  padding: 0px;
+
+.course-right-icons{
+  margin-right: 1rem;
+  height: 12px;
+  width: 12px;
+  
+}  
+
+}
+li{
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+}
+
+.enroll-btn{
+  background: #2D6A4F;
+  border-radius: 16px;
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+
+}
+
+
+
+
+/* The parent container doesn't need relative positioning for fixed elements */
+.ellipse {
+  position: absolute;
+  top: 150%; /* Vertically center the ellipse */
+  right: -350px; /* Move it to the right side, half-visible */
+  width: 100%; 
+  height: 130%; 
+  border-radius: 50%; /* Creates the ellipse shape */
+  z-index: -1; /* Ensures it stays behind content */
+  
+  background: radial-gradient(circle, rgba(216, 243, 220, 1) 30%, rgba(216, 243, 220, 0) 50%);
+  
+
+}
+
+body {
+  overflow-x: hidden; /* Prevents horizontal scroll due to position */
+}
+
+@media (max-width: 768px) {
+  .about-section-left {
+    padding: 1rem;
+    flex-direction: column;
+  }
+
+  .mentor-section {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .mentor-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mentor-text {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+.about-courses{
+  text-align: center;
+}
+.about-courses p{
+    margin-left: 40px;
+}
+  
+
+  .tools-section{
+    text-align: center;
+  }
+  .tools{
+    margin-left: 40%;
+    margin-bottom: 2.5rem;
+  }
+
+
+
+
+
+
+  .course-summary-right {
+    padding:1.5rem;
+    width: auto;
+    height: auto;
+
+
+  }
+
+  .video-container {
+    height: 200px;
+    width: 100%;
+    
+
+  }
+
+  .ellipse {
+    width: 100%;
+    height: 130%;
+    position: relative;
+  }
+
+  .enroll-btn {
+    padding: 0.75rem;
+  }
+}
