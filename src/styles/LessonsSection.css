@@ -1,0 +1,116 @@
+.lessons-section {
+  padding: 0rem 4rem;
+}
+
+.lesson-header-btns {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.btn-primary {
+  border: none;
+  text-decoration: 2px green underline;
+  font-size: large;
+  padding: 0.3rem 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: none;
+}
+
+.rating-btns {
+  display: flex;
+  gap: 1.3rem;
+  margin-bottom: 3rem;
+}
+
+.btns-6 {
+  border: 1.5px solid green;
+  border-radius: 16px;
+  padding: 0.2rem 1rem;
+}
+
+.lesson-cards-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.lesson-card {
+  flex: 1 1 calc(33.33% - 1rem);
+  background-color: white;
+  border-radius: 16px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-card-header {
+  display: flex;
+  align-items: center;
+}
+
+.lesson-card-header > span {
+  font-weight: bold;
+  margin-right: 2rem;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.card-header-btn {
+  border: 1.5px solid green;
+  border-radius: 16px;
+  padding: 0 0.5rem;
+  height: 20px;
+  font-size: 8px;
+  margin-left: auto;
+}
+
+.lesson-content {
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.lesson-card-time {
+  font-size: 0.6rem;
+  color: #888;
+  margin-top: auto;
+}
+
+.btns-6:hover {
+  background-color: green;
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+  .lesson-card {
+    flex: 1 1 calc(50% - 1rem); /* 2 cards per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .lesson-card {
+    flex: 1 1 100%;
+  }
+
+  .lessons-section {
+    padding: 0rem 2rem;
+  }
+
+  .rating-btns {
+    gap: 0.5rem;
+    
+  }
+  .btns-6 {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem; 
+  }
+
+}
