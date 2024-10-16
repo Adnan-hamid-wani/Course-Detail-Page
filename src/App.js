@@ -2,8 +2,30 @@ import './App.css';
 import CourseInfoCard from './components/CourseInfoCard';
 import Header from './components/Header';
 import MentorSection from './components/MentorSection';
+import LessonsSection from './components/LessonsSection';
 
 function App() {
+  const cardsData = [
+    {
+      avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhJLmoNFPe87NVMmOpesD213akzbE7ATJl6w&s",
+      name: "John Doe",
+      rating: "⭐ 5",
+      content: "This is the lesson content for John. This is the lesson content for John. This is the lesson content for John. This is the lesson content for John.This is the lesson content for John.✌️❤️",
+      date: "2 weeks ago",
+    },
+    {
+      avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHTLxG4I5b-TQJ3iHv9K0tOG-22-UtGKN-UUvgiMQY5p10Jcs_RUeqUWM-guw1_guXOwU&usqp=CAU",
+      name: "Jane Smith",
+      rating: "⭐ 3",
+      content: "This is the lesson content for Jane.😍👌This is the lesson content for Jane",
+      date: "October 14, 2024",
+    },
+    
+   
+   
+    
+    // Add more cards as needed
+  ];
 
   
   return ( <>
@@ -34,11 +56,15 @@ function App() {
         certificate={'Shareable certificate of completion'}
         access={"Online at your own place"}
         videoSrc={"https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4"} // Pass the YouTube URL as a prop
-
+        tag={"UI/UX Design"}
       />
-    
+
+<LessonsSection cardsData={cardsData} showCardOnly={false} />
+
+      
+
+      
     </div>
-    
       
     </>
     
