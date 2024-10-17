@@ -1,13 +1,15 @@
 .header {
+  position:fixed ;
+  top: 0px;
+  z-index: 999;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 4rem;
     padding-right: 5rem;
     width: 100%; /* Ensure the header takes up full screen width */
-    background: linear-gradient(233.91deg, #40916c 42.16%, #2d6a4f 65.15%);
+    background: linear-gradient(233.91deg, #388663 42.16%, #265d44 65.15%);
     box-sizing: border-box; /* Include padding in element’s total width */
-    
   }
   
   /* Left section: logo and categories */
@@ -20,17 +22,10 @@
     display: flex;
     flex-direction: column;
     height: 100px;
-    width: 100px;
+    width: 120px;
     margin-top: -20px;
   }
   
-  .logo-subtext {
-    font-size: 0.8rem;
-    color: #f5deb3;
-    z-index: 1;
-    position: fixed;
-    margin-top: 6%;
-  }
   
   /* Categories styling */
   .categories {
@@ -137,7 +132,9 @@
   @media screen and (max-width: 768px) {
     .header {
       flex-direction: column; /* Stack sections on smaller screens */
-      padding: 1rem;
+      padding: 0.5rem;
+      z-index: 1;
+      position:relative;
     }
     .header__left {
       flex-direction: column;

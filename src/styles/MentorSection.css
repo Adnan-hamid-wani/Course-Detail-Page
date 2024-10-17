@@ -1,7 +1,7 @@
 .about-section-left {
   padding: 3rem 4rem;
   display: flex;
-  justify-content: space-between; /* Distributes space between left and right sections */
+  justify-content: space-between; 
 }
 
 .about-btn {
@@ -17,8 +17,8 @@
 }
 
 .mentor-section {
-  flex: 1; /* Allows this section to grow */
-  max-width: 50%; /* Prevents this section from taking too much space */
+  flex: 1; 
+  max-width: 50%;
   padding-top: 1.5rem;
 }
 
@@ -53,7 +53,7 @@
 .tools-img {
   width: 70px;
   height: 60px;
-  margin-left: -20px;
+  margin-left: -15px;
   margin-top: 10px;
 }
 
@@ -72,10 +72,10 @@
 .course-summary-right {
   padding: 3rem;
   display: flex;
-  flex-direction: column; /* Ensures contents are stacked */
+  flex-direction: column; 
   background: #ffffff;
-  height: 380px; /* Adjust as needed */
-  width: 420px; /* Set the width */
+  height: 380px; 
+  width: 420px; 
   border-radius: 30px;
   padding-top: 1.5rem;
 
@@ -83,43 +83,43 @@
 }
 
 .video-container {
-  position: relative; /* Position relative to position the overlay */
+  position: relative; 
   width: 420px;
-  height: 180px; /* Match your video height */
+  height: 180px;
   border-radius: 26px;
   cursor: pointer;
   background-color:lightgray;
 }
 
 .course-video {
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  border-radius: 20px; /* Match border radius */
-  object-fit: cover; /* Ensure the video covers the area */
+  width: 100%;
+  height: 100%; 
+  border-radius: 20px; 
+  object-fit: cover;
 }
 
 .video-overlay {
-  position: absolute; /* Position overlay over video */
+  position: absolute; 
   top: 75%; 
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Adjust for element size */
+  left: 50%; 
+  transform: translate(-50%, -50%); 
   display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  align-items: center; /* Center items */
+  flex-direction: column; 
+  align-items: center; 
 }
 
 .overlay-text {
-  margin-top: 5px; /* Space between button and text */
-  color: white; /* Text color */
-  font-size: 18px; /* Adjust as needed */
+  margin-top: 5px; 
+  color: white; 
+  font-size: 18px; 
 }
 
 .tag {
-  display: inline-block; /* Makes it behave like a button */
+  display: inline-block; 
   background: #335EF714;
-  color: green; /* Text color */
-  border-radius: 6px; /* Rounded corners */
-  font-size: 6px; /* Font size */
+  color: green; 
+  border-radius: 6px; 
+  font-size: 6px;
   width: 40px;
   margin-top: 0.5rem;
   height: 0.7rem;
@@ -143,7 +143,7 @@
 }
 
 ul{
-  list-style-type: none; /* Removes the bullet points */
+  list-style-type: none; 
   padding: 0px;
 
 .course-right-icons{
@@ -173,16 +173,14 @@ margin-bottom: 10px;
 
 
 
-
-/* The parent container doesn't need relative positioning for fixed elements */
 .ellipse {
   position: absolute;
-  top: 150%; /* Vertically center the ellipse */
-  right: -350px; /* Move it to the right side, half-visible */
-  width: 100%; 
-  height: 130%; 
-  border-radius: 50%; /* Creates the ellipse shape */
-  z-index: -1; /* Ensures it stays behind content */
+  top:500px; 
+  right: -350px; 
+  width: 1200px; 
+  height: 1300px; 
+  border-radius: 50%; 
+  z-index: -1; 
   
   background: radial-gradient(circle, rgba(216, 243, 220, 1) 30%, rgba(216, 243, 220, 0) 50%);
   
@@ -190,7 +188,7 @@ margin-bottom: 10px;
 }
 
 body {
-  overflow-x: hidden; /* Prevents horizontal scroll due to position */
+  overflow-x: hidden; 
 }
 
 @media (max-width: 768px) {
@@ -202,6 +200,7 @@ body {
   .mentor-section {
     max-width: 100%;
     padding: 1rem;
+    text-align: center;
   }
 
   .mentor-info {
@@ -220,11 +219,7 @@ body {
     margin-left: 40px;
 }
   
-
-  .tools-section{
-    text-align: center;
-  }
-  .tools{
+.tools{
     margin-left: 40%;
     margin-bottom: 2.5rem;
   }
@@ -248,12 +243,14 @@ body {
     
 
   }
-
-  .ellipse {
-    width: 100%;
-    height: 130%;
-    position: relative;
+  .ellipse{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    margin-top: 700px;
   }
+
+  
 
   .enroll-btn {
     padding: 0.75rem;

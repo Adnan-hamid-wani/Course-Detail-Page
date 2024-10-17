@@ -1,0 +1,137 @@
+.newsLetter-cont {
+    padding: 4rem 4rem;
+    background: rgba(253, 252, 250, 1);
+  }
+  
+  .newsLetter-box {
+    padding: 1.5rem 4.5rem;
+    background: rgba(149, 213, 178, 1);
+    border-radius: 16px;
+    display: flex;
+    box-shadow: 3px 6px 19.6px 14px rgba(0, 0, 0, 0.1);
+    height: 250px;
+    align-items: center;
+    position: relative;
+  }
+  
+  .newsLetter-left,
+  .newsLetter-right {
+    flex: 1;
+    box-sizing: border-box;
+  }
+  
+  .newsLetter-left {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .newsLetter-right {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  
+  .newsLetter-right > h2 {
+    margin-bottom: auto;
+    margin-top: auto;
+  }
+  
+  .newsLetter-right > p {
+    margin-top: auto;
+  }
+  
+  .newsLetter-right > input {
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 7px;
+  }
+  
+  .newsLetter-right > button {
+    background: rgba(45, 106, 79, 1);
+    color: white;
+    border: none;
+    border-radius: 16px;
+    padding: 1rem 1rem;
+    cursor: pointer;
+  }
+  
+  .ellipse-2 {
+    width: 900px;
+    height: 1200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(216, 243, 220, 1) 40%, rgba(216, 243, 220, 0) 60%);
+    margin-left: -450px;
+    margin-top: -950px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1200px) {
+    .newsLetter-cont {
+      padding: 3rem 2rem;
+    }
+  
+    .newsLetter-box {
+      padding: 1.5rem 2.5rem;
+    }
+  
+    .newsLetter-left {
+      font-size: 35px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .newsLetter-cont {
+      padding: 2rem 1rem;
+    }
+  
+    .newsLetter-box {
+      flex-direction: column;
+      height: auto;
+      padding: 1.5rem;
+    }
+  
+    .newsLetter-left {
+      font-size: 22px;
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+  
+    .newsLetter-right {
+      align-items: center;
+      text-align: center;
+      font-size: 12px;
+
+    }
+  
+    .newsLetter-right > input {
+      width: 92%;
+    }
+  
+    .newsLetter-right > button {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .newsLetter-left {
+      font-size: 25px;
+    }
+  
+    .newsLetter-right {
+      gap: 0.3rem;
+    }
+  
+    .newsLetter-right > h2 {
+      font-size: 1.5rem;
+    }
+  
+    .newsLetter-right > input {
+      padding: 0.8rem;
+    }
+  
+    .newsLetter-right > button {
+      padding: 0.8rem;
+    }
+  }
+  
