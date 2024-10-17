@@ -20,6 +20,7 @@ const MentorSection = ({
   certificate,
   availabilty,
   videoSrc,
+  tag,
 }) => {
   return (
     <div className="about-section-left">
@@ -73,7 +74,7 @@ const MentorSection = ({
         </div>
 
         <div className="about-course-details">
-          <div className="tag">UI/UX Design</div>
+          <div className="tag">{tag}</div>
           <h4>Last updated {lastUpdated}</h4>
           <ul >
             <li>
