@@ -1,7 +1,28 @@
 import React from "react";
 import "../styles/LessonsSection.css";
 
-function LessonsSection({ cardsData }) {
+function LessonsSection() {
+  const cardsData = [
+    {
+      avatar:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhJLmoNFPe87NVMmOpesD213akzbE7ATJl6w&s",
+      name: "John Doe",
+      rating: "⭐ 5",
+      content:
+        "This is the lesson content for John. This is the lesson content for John. This is the lesson content for John. This is the lesson content for John.This is the lesson content for John.✌️❤️",
+      date: "2 weeks ago",
+    },
+    {
+      avatar:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHTLxG4I5b-TQJ3iHv9K0tOG-22-UtGKN-UUvgiMQY5p10Jcs_RUeqUWM-guw1_guXOwU&usqp=CAU",
+      name: "Jane Smith",
+      rating: "⭐ 3",
+      content:
+        "This is the lesson content for Jane.😍👌This is the lesson content for Jane",
+      date: "October 14, 2024",
+    },
+    
+  ];
   return (
     <div className="lessons-section">
       <div className="lesson-header-btns">

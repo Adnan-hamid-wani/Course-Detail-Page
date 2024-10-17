@@ -63,7 +63,6 @@ function SimilarCourses() {
           </div>
         ))}
       </div>
-      <div className="ellipse-2"></div>
     </div>
   );
 }

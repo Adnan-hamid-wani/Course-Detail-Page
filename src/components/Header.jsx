@@ -14,7 +14,6 @@ export default function Header() {
             src="https://png.pngtree.com/png-clipart/20211017/original/pngtree-mashallah-3d-golden-calligraphy-arabic-written-text-transparent-background-png-image_6853056.png"
             alt="Logo"
           />
-          <span className="logo-subtext">الافترايفكتس و البريمي</span>
         </div>
 
         <div className="categories">
