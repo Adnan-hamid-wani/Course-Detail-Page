@@ -4,10 +4,9 @@ import Header from "./components/Header";
 import MentorSection from "./components/MentorSection";
 import LessonsSection from "./components/LessonsSection";
 import SimilarCourses from "./components/SimilarCourses";
+import NewsletterSignup from "./components/NewsLetterSignup";
 
 function App() {
-  
-
   return (
     <>
       <div className="app_header">
@@ -45,12 +44,8 @@ function App() {
         />
 
         <LessonsSection />
-
-
-
         <SimilarCourses />
-
-      
+        <NewsletterSignup />
       </div>
     </>
   );
